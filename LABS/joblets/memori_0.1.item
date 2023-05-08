@@ -46,7 +46,7 @@
       <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:FID+8VOFgVSNoGB0enD6UV3dJDOkSktdR/qymYMs"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:OVHF3HsdB+Jm+3y/fajRWz1vSFn674n7dD/tWtcb"/>
       <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -336,7 +336,7 @@
       <elementParameter field="EXTERNAL" name="MAP" value=""/>
       <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
       <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
-      <elementParameter field="IMAGE" name="PREVIEW" value="_WRVOQO23Ee2DIJjDjJTDvw-tMap_1-PREVIEW.bmp"/>
+      <elementParameter field="IMAGE" name="PREVIEW" value="_VSvr0O3HEe2DIJjDjJTDvw-tMap_1-PREVIEW.bmp"/>
       <elementParameter field="CHECK" name="DIE_ON_ERROR" show="false" value="true"/>
       <elementParameter field="CHECK" name="LKUP_PARALLELIZE" show="false" value="false"/>
       <elementParameter field="TEXT" name="LEVENSHTEIN" show="false" value="0"/>
@@ -355,7 +355,7 @@
         <column comment="" key="false" length="-1" name="Update_date_1" nullable="true" originalDbColumnName="Update_date" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
       </metadata>
       <nodeData xsi:type="TalendMapper:MapperData">
-        <uiProperties shellMaximized="true"/>
+        <uiProperties/>
         <varTables minimized="true" name="Var" sizeState="INTERMEDIATE"/>
         <outputTables name="enriched_data" sizeState="INTERMEDIATE">
           <mapperTableEntries expression="row6.Product_ID " name="Product_ID" nullable="true" type="id_String"/>
@@ -451,20 +451,43 @@
       <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="enriched_data"/>
     </connection>
+    <connection connectorName="FLOW" label="row7" lineStyle="0" metaname="tLogRow_4" offsetLabelX="0" offsetLabelY="0" source="tLogRow_4" target="OUTPUT_1">
+      <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+      <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row7"/>
+    </connection>
     <subjob>
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileInputDelimited_1"/>
       <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
       <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
     </subjob>
+    <jobletNodes componentName="OUTPUT" componentVersion="0.1" offsetLabelX="0" offsetLabelY="0" posX="928" posY="192">
+      <elementParameter field="TEXT" name="UNIQUE_NAME" value="OUTPUT_1"/>
+      <elementParameter field="CHECK" name="STARTABLE" show="false" value="false"/>
+      <elementParameter field="CHECK" name="START" show="false" value="false"/>
+      <elementParameter field="TEXT" name="LABEL" value="__UNIQUE_NAME__"/>
+      <elementParameter field="TEXT" name="HINT" value="&lt;b&gt;__UNIQUE_NAME__&lt;/b&gt;&lt;br&gt;__COMMENT__"/>
+      <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+      <elementParameter field="CHECK" name="INFORMATION" value="false"/>
+      <elementParameter field="MEMO" name="COMMENT" value=""/>
+      <metadata connector="FLOW" label="enriched_data" name="OUTPUT_1">
+        <column comment="" key="false" length="7" name="Product_ID" nullable="true" originalLength="7" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="17" name="Description" nullable="true" originalLength="17" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="9" name="Manufacturer" nullable="true" originalLength="9" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="6" name="Channel" nullable="true" originalLength="6" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+        <column comment="" key="false" length="6" name="Price" nullable="true" originalLength="6" pattern="" precision="3" sourceType="" type="id_Float" usefulColumn="true"/>
+        <column comment="" key="false" length="6" name="Previous_price" nullable="true" originalLength="6" pattern="&quot;yyyy-MM-dd&quot;" precision="3" sourceType="" type="id_Float" usefulColumn="true"/>
+        <column comment="" key="false" length="-1" name="Update_date_1" nullable="true" originalDbColumnName="Update_date" originalLength="-1" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="" type="id_Date" usefulColumn="true"/>
+      </metadata>
+    </jobletNodes>
   </model:JobletProcess>
   <TalendProperties:ByteArray/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_42cc4064-4795-4085-aa92-584b14b2cd5e"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>Od+S5MYvP9ZHSn8t1NGr71pITh6eSTG4ATBAQXp9O54TOT2SmxQzTlHYJTUJla6Dh+GKTlUDzsGA&#13;
-JRiPvMrt6A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6b47da7a-af96-4b14-ac83-1dfb83e99d56"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ygxIsYmVo6zgTXASsURx+z02FAVOWDL1LsCaIkIhnlhd5laEz4Xlp/3KZrlX1W6n0Ws1HhhrAjg+&#13;
-PB+vRVnMAQ==</DigestValue></Reference></SignedInfo><SignatureValue>W/ppnlxGEy5tloK9BWRshfK8nqqsy5uPktUfDQZcrVRvMeK7g1H7DHY292sZgkzP4LBUKoLPFdKE&#13;
-zQsrjmXGTM8ys7QZfEPy//k0r5UpKMTYfLyhdgmD/GvJ0SdeZqqXoRK04EH+b2EUX3qlxq6MrWNp&#13;
-klMWrz5tfKjOJUR3aeglH0jKjDzwwkQlxpxfkXd3skpjCl7nlFBEyJ8h0b7c75cLMj0Vlw9OsU7T&#13;
-wqhgSJTABaMIW9LWXPMu1TQz3BjTy9bCFwNZeeMEkTNUtcdptGb8PRELY7mFPjFmLpHugrpPNxsA&#13;
-q7iT2DxfMDaqHdRHO3fXlZy0PlzlfcWG0BhADQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_60f72637-b120-4b60-acb0-726672bd4ad4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>CWGxoXDNAPOQsmEiBBIl8Ctov77J2HmGOUIzAv04qj5juTlTFEDAgicb79z9Z1m1qLZ3YZNKjts8&#13;
+ZyufoAhOcA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7cddd4df-a69b-4faa-807f-dde8e4cc20ae"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>VGp6nb/X++rEfLNL0zUWAWr9FlWWABgF/uB44udNWV+DNx/mTEF7ZeO3tGaZgG6R4TpbRzlFTvLy&#13;
+XNKjNzq68Q==</DigestValue></Reference></SignedInfo><SignatureValue>FCXhig4e6dAZiSyDrePPdQ00LczeBfNOpoYpIv00PVoZheKQh0ruXjQCLgX1Pou+jWGXPhKQbaUe&#13;
+bmuhuPqMPr9UQhOM26YzRAYiyxGomvP/MjgzICNOCRnsXBZUepquRXCGM/lxt9u3MfpigOIonHCW&#13;
+HXJp3TFeFnj2eVZYm0xO+bXesg/Bugi6TAC1cnJ+OhvOWYejw095z9dtqPjKaP5V4s/G405bWAVp&#13;
+lzG/pB5p9BYXPCtTOjSB5B7B4noBm2b44+Y2bqjM8LuKVmD5MzUVrtUZ8MUOIF6+rhiTJyFP9yBD&#13;
+g5JyFV9r9nT0709t4yXI3Ue4msUNTYl3XmqumA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -486,4 +509,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6b47da7a-af96-4b14-ac83-1dfb83e99d56" Target="#_42cc4064-4795-4085-aa92-584b14b2cd5e"><Timestamp>2023-05-08 17:39:55</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7cddd4df-a69b-4faa-807f-dde8e4cc20ae" Target="#_60f72637-b120-4b60-acb0-726672bd4ad4"><Timestamp>2023-05-08 17:44:56</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
