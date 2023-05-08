@@ -46,7 +46,7 @@
       <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:PLqyAcLcO+As37oLemwIObIwTZS1Ud7vseU1iMvQ"/>
+      <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:pPMkuwb7Fv8nNuUexsP2dKnUGRtaxDQVOT6pjJUJ"/>
       <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
       <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -378,6 +378,8 @@
     </node>
     <node componentName="tLogRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="192">
       <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogRow_4"/>
+      <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+      <elementParameter field="CHECK" name="DUMMY" show="false" value="true"/>
       <elementParameter field="RADIO" name="BASIC_MODE" value="false"/>
       <elementParameter field="RADIO" name="TABLE_PRINT" value="true"/>
       <elementParameter field="RADIO" name="VERTICAL" value="false"/>
@@ -481,13 +483,13 @@
     </jobletNodes>
   </model:JobletProcess>
   <TalendProperties:ByteArray/>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_eafad4d3-d651-4521-a29c-7586695d10f3"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>kcg/osqB1YeBAvzvXFzmyeEJYZyKAeqdf9IFuPjCsDuAe83doZyjwd9Gk2COweuJb0u2k0z+3m8N&#13;
-EGDewmLB8w==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6692fbc8-14b7-4a95-89f3-a457fc57ac8b"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FYobOMWY/936sR6r5PskW85iBemSM6IpzD1ikpVTLhpH5k6MYL+A1Rp8bPjfkKiHTom3yl8L4OWE&#13;
-wprfbvWuBw==</DigestValue></Reference></SignedInfo><SignatureValue>pRMywZfcNexKtoJyKzWMJ56nMIOw8JFAGSFUQ1DL2bkh1M+5Vso927QPU6HtkZWW7DAZiHunmPMj&#13;
-GR2c52SY79X/b1I26A9WdTiBduavMmVqDDFerVUNsdsIvHv/hQUGGUi8ljXnei7WMypqxf5nCnqx&#13;
-h7zNKVkYWDqAI4O6bTjHAw8NoVT8C3GXWRTEzrdBA0mJujLqvgVLSSLPgk6H4XQwHdGg6tNc5W2f&#13;
-bzyAuYxYFbr9+qEe7SviBDVEGvi6HXwAYTiS8vW4OOAPcjYNtB1B33DElHEAFWny+DTtphjOStdv&#13;
-tShDOIpCyl+zw7P3/DKnFma6H90jj/oQ/DkF5A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_44614033-5789-4abd-b8e0-9d51f8d66d4c"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>FhzO/3nKIwK7gN59vXAwWPkC6rlQIdvkKJ5jqEUaEfiL0L+yLhWrjj+0UrNysxqngpP4cOPounoV&#13;
+gTnSaxeBKw==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_8d54f0a5-57a8-4055-95fb-b6167b0737d3"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>gry3iAWV5qAuHJccy0paNkcJWlSfEgmnWh+xi5Tp/UV69vf2xRBemlhNCZbDKW5dmzMBs/XvSeC8&#13;
+0N4OoBIvaw==</DigestValue></Reference></SignedInfo><SignatureValue>CjYptDndCHimoOFhq6aIm3HJLM2HpLu7matpnFICMvL0GB4qFfz39Xdpj7nx8/3Z8rrGGxSiGV0y&#13;
+RpWLW2DqbOIVqRt6qYk6qZPSloLaRtT9Km3eug/Xj7Iut8aXW398P/uLCwTsfDl9yR52I1fWEYP8&#13;
+BEd2uOe8na4mVXpM/xTeycMTbGhQQuhLjpKMgyHcWtCTDppGogGC/epc0/sn4bdXLyWXTuZKgNuW&#13;
+te8VTraRjI7VVdWuwUszWIn9FQUPDp5zG8ejxoLhuPjDEXtrRahpjaYgiGA0OBOmmkxUb9uOIive&#13;
+bSGLzu+RiggOb0GkRRIZ43J8GAAfkVegFGh7cw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -509,4 +511,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6692fbc8-14b7-4a95-89f3-a457fc57ac8b" Target="#_eafad4d3-d651-4521-a29c-7586695d10f3"><Timestamp>2023-05-08 17:46:37</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_8d54f0a5-57a8-4055-95fb-b6167b0737d3" Target="#_44614033-5789-4abd-b8e0-9d51f8d66d4c"><Timestamp>2023-05-08 17:50:12</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></xmi:XMI>
